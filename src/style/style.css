@@ -1,5 +1,5 @@
 * {
-    color: var(--white);
+    color: var(--black);
     overscroll-behavior: none;
 }
 
@@ -31,6 +31,34 @@ body {
 
 
 #hometext {
+    color: var(--white);
     position: relative;
-    font-size: 5vw;
+    font-size: 7vw;
+    margin-top: 65vh;
+    margin-left: 5vw;
+}
+
+.info-box-l {
+    align-self: flex-start;
+    color: var(--black);
+}
+
+.info-box-r {
+    align-self: flex-end;
+    color: var(--white);
+}
+
+.info-box {
+    width: 50vw;
+    height: 50vw;
+}
+
+.info-wrapper-top {
+    display: flex;
+    padding-top: 100vh;
+}
+
+
+.info-wrapper-bottom {
+    display: flex;
 }
