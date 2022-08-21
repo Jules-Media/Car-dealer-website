@@ -1,3 +1,5 @@
+/* General Values */
+
 * {
     color: var(--black);
     overscroll-behavior: none;
@@ -8,6 +10,8 @@
     --black: #000000
 }
 
+/* Tag Values */
+
 
 html,
 body {
@@ -15,6 +19,8 @@ body {
     margin: 0;
 }
 
+
+/* Home Section */
 
 #homepic {
     height: 100vh;
@@ -38,27 +44,67 @@ body {
     margin-left: 5vw;
 }
 
-.info-box-l {
-    align-self: flex-start;
-    color: var(--black);
-}
 
-.info-box-r {
-    align-self: flex-end;
-    color: var(--white);
-}
+/* Info Section */
 
 .info-box {
     width: 50vw;
     height: 50vw;
+    overflow: hidden;
 }
+
+.info-box-l {
+    align-self: flex-start;
+}
+
+.info-box-r {
+    align-self: flex-end;
+}
+
+.info-box-zoom {
+    width: 50vw;
+    height: 50vw;
+    transition: all .5s ease-in-out;
+    object-fit: cover;
+}
+
+.info-box-zoom:hover {
+    transform: scale(1.2);
+    transition: all .5s ease-in-out;
+}
+
 
 .info-wrapper-top {
     display: flex;
     padding-top: 100vh;
 }
 
-
 .info-wrapper-bottom {
     display: flex;
+}
+
+/* Class for the Info Pictures in the info Section
+of the Website */
+.infopic {
+    max-width: 100%;
+    vertical-align: middle;
+    position: relative;
+}
+
+/* Class for every Image. */
+.pic {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+/* Class for the Info text on the Info Section
+of the Website */
+.info-text {
+    color: var(--white);
+    margin-left: 5vw;
+    margin-top: 65vh;
+    font-size: 3vw;
+    position: absolute;
+    z-index: 10;
 }
