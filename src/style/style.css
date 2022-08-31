@@ -9,6 +9,7 @@
     --white: #ffffff;
     --black: #000000;
     --background-color: #2b2e2c;
+    --blur-color: rgba(57, 57, 57, 0.25);
 }
 
 /* Tag Values */
@@ -49,6 +50,7 @@ html body {
 /* Info Section */
 
 .info-box {
+    display: flex;
     width: 50vw;
     height: 50vw;
     overflow: hidden;
@@ -119,14 +121,21 @@ of the Website */
 /* Class for the Info text on the Info Section
 of the Website */
 .info-text {
+    display: inline-block;
+    align-self: flex-end;
+    max-width: 35vw;
     color: var(--white);
-    background-color: rgba(57, 57, 57, 0.25);
+    background-color: var(--blur-color);
     margin-left: 4vw;
-    margin-top: 60vh;
+    margin-bottom: 10vh;
     padding: 0.5vw;
     font-size: 3vw;
     position: absolute;
     z-index: 10;
     backdrop-filter: blur(10px) saturate(50%);
     -webkit-backdrop-filter: blur(10px) saturate(50%);
+    border: solid;
+    border-color: var(--blur-color);
+    border-radius: 1.5vw;
+    border-width: 0.1vw;
 }
