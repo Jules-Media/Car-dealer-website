@@ -1,7 +1,7 @@
 /* General Values */
 
 * {
-    color: var(--black);
+    color: var(--white);
     overscroll-behavior: none;
 }
 
@@ -47,7 +47,6 @@ html body {
 #hometext {
     display: inline-block;
     align-self: flex-end;
-    color: var(--white);
     position: absolute;
     font-size: 7vw;
     margin-left: 7.5vw;
@@ -117,14 +116,23 @@ This code does that. */
     transition: all .5s ease-in-out;
 }
 
-/* The Info Wrapper for the first info Row */
+/* Class for the top info wrapper */
 .info-wrapper-top {
     display: flex;
 }
 
-/* The Info Wrapper for the second info Row */
+/* Class for the bottom info wrapper */
 .info-wrapper-bottom {
     display: flex;
+}
+
+.info-wrapper-box {
+    backdrop-filter: blur(1000px);
+    /* background-color: var(--blur-color); */
+    border: solid;
+    border-width: 0.1vw;
+    border-radius: 1.5vw;
+    padding: 1vw;
 }
 
 
@@ -150,7 +158,6 @@ of the Website */
     display: inline-block;
     align-self: flex-end;
     max-width: 35vw;
-    color: var(--white);
     background-color: var(--blur-color);
     margin-left: 4vw;
     margin-bottom: 10vh;
