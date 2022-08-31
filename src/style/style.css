@@ -120,9 +120,10 @@ of the Website */
 of the Website */
 .info-text {
     color: var(--white);
+    background-color: rgba(57, 57, 57, 0.25);
     margin-left: 4vw;
     margin-top: 60vh;
-    padding: 0.7vw;
+    padding: 0.5vw;
     font-size: 3vw;
     position: absolute;
     z-index: 10;
