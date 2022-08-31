@@ -10,6 +10,7 @@
     --black: #000000;
     --background-color: #2b2e2c;
     --blur-color: rgba(57, 57, 57, 0.25);
+    --white-blur-color: rgba(255, 255, 255, 0.2)
 }
 
 /* Tag Values */
@@ -126,12 +127,15 @@ This code does that. */
     display: flex;
 }
 
+
 .info-wrapper-box {
-    backdrop-filter: blur(1000px);
-    /* background-color: var(--blur-color); */
+    background-color: var(--white-blur-color);
+    backdrop-filter: blur(10px);
     border: solid;
     border-width: 0.1vw;
     border-radius: 1.5vw;
+    border-color: var(--white-blur-color);
+    margin: 2vw;
     padding: 1vw;
 }
 
