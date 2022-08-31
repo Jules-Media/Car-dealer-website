@@ -137,7 +137,25 @@ This code does that. */
     border-color: var(--white-blur-color);
     margin: 2vw;
     padding: 1vw;
+    display: inline-flex;
 }
+
+/* .wrapper01 {
+    width: ;
+    height: fit-content;
+} */
+
+.video01 {
+    background-color: var(--white-blur-color);
+    backdrop-filter: blur(10px);
+    border-radius: 1.5vw;
+    margin: 2vw;
+    overflow: hidden;
+    display: block;
+    width: 95.8vw;
+    
+}
+
 
 
 /* Class for the Info Pictures in the info Section
@@ -175,4 +193,12 @@ of the Website */
     border-color: var(--blur-color);
     border-radius: 1.5vw;
     border-width: 0.1vw;
+}
+
+.pic-info-box {
+    max-width: 30vw;
+    max-height: 30vw;
+    margin-right: 0% !important;
+    right: 0 !important;
+    align-self: flex-end;
 }
