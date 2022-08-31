@@ -127,37 +127,6 @@ This code does that. */
     display: flex;
 }
 
-
-.info-wrapper-box {
-    background-color: var(--white-blur-color);
-    backdrop-filter: blur(10px);
-    border: solid;
-    border-width: 0.1vw;
-    border-radius: 1.5vw;
-    border-color: var(--white-blur-color);
-    margin: 2vw;
-    padding: 1vw;
-    display: inline-flex;
-}
-
-/* .wrapper01 {
-    width: ;
-    height: fit-content;
-} */
-
-.video01 {
-    background-color: var(--white-blur-color);
-    backdrop-filter: blur(10px);
-    border-radius: 1.5vw;
-    margin: 2vw;
-    overflow: hidden;
-    display: block;
-    width: 95.8vw;
-    
-}
-
-
-
 /* Class for the Info Pictures in the info Section
 of the Website */
 .infopic {
@@ -195,7 +164,21 @@ of the Website */
     border-width: 0.1vw;
 }
 
-.pic-info-box {
+/* Wrapper for the Info Row */
+.info-wrapper-row {
+    background-color: var(--white-blur-color);
+    backdrop-filter: blur(10px);
+    border: solid;
+    border-width: 0.1vw;
+    border-radius: 1.5vw;
+    border-color: var(--white-blur-color);
+    margin: 2vw;
+    padding: 1vw;
+    display: inline-flex;
+}
+
+/* Class for the picture in the info row */
+.pic-info-row {
     max-width: 30vw;
     max-height: 30vw;
     margin-right: 0% !important;
