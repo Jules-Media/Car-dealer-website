@@ -66,10 +66,12 @@ html body {
     height: 50vw;
     overflow: hidden;
     border: solid;
-    border-width: 0.5vw;
-    border-color: var(--background-color);
+    margin: 1vh;
+    border-width: 0.0vw;
+    border-color: rgba(0, 0, 0, 0.0);
     border-radius: 25px;
     z-index: 1;
+    box-shadow: 1px 1px 10px rgba(39, 109, 238, 0.65);
 }
 
 /* A class specific for all info boxes
@@ -91,7 +93,7 @@ on the right side of the screen. */
 
 /* The margin for the second left info Box */
 .info-wrapper-bottom .info-box-l {
-    margin-top: -5vh;
+    margin-top: -3vh;
 }
 
 /* The Box that zooms the image */
@@ -166,6 +168,7 @@ of the Website */
 
 /* Wrapper for the Info Row */
 .info-wrapper-row {
+    display: inline-block;
     background-color: var(--white-blur-color);
     backdrop-filter: blur(10px);
     border: solid;
@@ -174,14 +177,73 @@ of the Website */
     border-color: var(--white-blur-color);
     margin: 2vw;
     padding: 1vw;
-    display: inline-flex;
+    width: 93.8vw;
+    box-shadow: 1px 1px 10px rgba(39, 109, 238, 0.65);
 }
 
-/* Class for the picture in the info row */
-.pic-info-row {
+#pic-info-row-1 {
+    border: solid;
+    border-width: 0.1vw;
+    border-radius: 1.5vw;
+    border-color: var(--white-blur-color);
+    float: right;
     max-width: 30vw;
     max-height: 30vw;
     margin-right: 0% !important;
     right: 0 !important;
-    align-self: flex-end;
+    box-shadow: 1px 1px 10px rgba(39, 109, 238, 0.65);
+}
+
+#pic-info-row-2 {
+    border: solid;
+    border-width: 0.1vw;
+    border-radius: 1.5vw;
+    border-color: var(--white-blur-color);
+    float: left;
+    max-width: 30vw;
+    max-height: 30vw;
+    margin-right: 0% !important;
+    right: 0 !important;
+    box-shadow: 1px 1px 10px rgba(39, 109, 238, 0.65);
+}
+
+.info-row-text {
+    display: inline-flex;
+    padding-right: 1.5vw;
+    padding-left: 1.5vw;
+
+}
+
+#info-row-text-1 {
+    float: left;
+}
+
+#info-row-text-2 {
+    float: right;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    vertical-align: middle;
+    padding: 10vh;
+    background: linear-gradient(50deg, #1589d6, #1515d6);
+}
+
+#footer-wrapper {
+    float: right;
+    width: 50vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+}
+
+i {
+    font-size: 200px;
 }
