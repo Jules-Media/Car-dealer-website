@@ -1,6 +1,7 @@
 /* General Values */
 
 * {
+    user-select: none;
     color: var(--white);
     overscroll-behavior: none;
 }
@@ -11,6 +12,10 @@
     --background-color: #2b2e2c;
     --blur-color: rgba(57, 57, 57, 0.25);
     --white-blur-color: rgba(255, 255, 255, 0.2)
+}
+
+p {
+    user-select: text;
 }
 
 /* Tag Values */
@@ -209,8 +214,10 @@ of the Website */
 
 .info-row-text {
     display: inline-flex;
+    max-width: 50vw;
     padding-right: 1.5vw;
     padding-left: 1.5vw;
+    font-size: 2vw;
 
 }
 
